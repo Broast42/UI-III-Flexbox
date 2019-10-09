@@ -64,3 +64,197 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	background: white;
+	color: black;
+	margin: auto;
+	width: 876px;
+ 
+}
+
+nav{
+	background:#4d94ff;
+	position: fixed;
+	width: 876px;
+	margin: auto;
+	top: 0;
+	display: flex;
+}
+
+
+a{
+	
+	width: 10%;
+	height: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	
+}
+
+h1{
+	font-size: 30px;
+}
+
+header div.header-text h1{
+	font-size: 60px;
+	
+}
+
+.services-header-img{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.logo{
+	margin-left: 80px;
+	vertical-align: middle;
+	
+}
+
+.img{
+	display: inline-block;
+	
+}
+
+
+
+header{
+	margin-top: 50px;
+	padding-bottom: 40px;
+	
+	border-bottom: 1px solid black;
+}
+
+.index-header{
+	display: flex;
+}
+
+
+
+.header-text{
+	width: 45%;
+	text-align: center;
+	padding-top: 40px;
+	margin-right: 20px;
+}
+.header-img{
+	width: 300px;
+	height: 300px;
+	margin-left: 90px;
+	
+}
+
+button{
+	border: 1px solid black;
+	width: 125px;
+	padding: 5px;
+}
+
+section{
+	
+	
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+.service-section{
+	flex-wrap: wrap;
+}
+
+.info-box{
+	width: 400px;
+	margin: 19px;
+	border: 1px solid black;
+	background: #f0f0f5;
+	padding: 20px;
+	
+	
+}
+
+div.info-box button{
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+
+.main-top{
+	width: 45%;
+	margin: 40px 25px 40px 0px;
+}
+
+.main-top:last-child{
+	margin-right: 0px;
+	
+}
+
+.main-bottom{
+	width: 28%;
+	margin: 40px 25px 40px 0px;
+}
+
+.main-bottom:last-child{
+	margin-right: 0px;
+	
+}
+
+footer{
+	border-top: 2px solid black;
+	padding-top: 20px;
+}
+
+.footer-text{
+	margin-right: 30px;
+}
+
+.services-footer{
+	display: flex;
+	margin-top: 20px;
+
+}
+
+ul{
+	list-style-type: square;
+	margin-left: 20px;
+}
+
+ul li{
+	margin-top: 20px;
+}
+
+address{
+	margin: 20px 0px 20px 0px;
+}
+
+.copyright{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.copyright-services{
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px){
+	
+	.index-header, section, .services-footer{flex-direction: column;}
+	body{width: 600px;}
+	nav{width: 100%;}
+	.services-header-img, .middle-img{width: 600px}
+	header, .services-footer{margin: 10px; width: 600px;}
+	section, header, .services-footer{align-items: center;}
+	ul{margin-bottom: 20px;}
+	.header-text{margin: 20px;}
+	.header-img{margin-left:0px;}
+	footer{margin:20px;}
+	.services-footer{padding:20px}
+	
+}
